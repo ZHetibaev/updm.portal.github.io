@@ -1,0 +1,204 @@
+
+/* ===== ОБЩИЙ СТИЛЬ ===== */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f3f4f6;
+    color: #111827;
+}
+
+/* ===== HEADER ===== */
+.header {
+    background: #0f172a;
+    color: white;
+    padding: 16px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.header-inner {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: #cbd5e1;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* ===== SEARCH ===== */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    background: white;
+}
+
+input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37,99,235,0.15);
+}
+
+/* ===== BUTTONS ===== */
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* основной поиск */
+.search-box button {
+    background: #2563eb;
+    color: white;
+}
+
+/* ===== TITLES ===== */
+h2 {
+    margin-top: 25px;
+    font-size: 18px;
+    border-left: 4px solid #2563eb;
+    padding-left: 10px;
+}
+
+/* ===== CARDS ===== */
+.card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    padding: 14px;
+    margin: 10px 0;
+    transition: 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* ===== ORGANIZATION TITLE ===== */
+.card h3 {
+    margin: 0 0 8px 0;
+    color: #1d4ed8;
+    font-size: 15px;
+}
+
+/* ===== STATUS COLORS ===== */
+.active {
+    color: #16a34a;
+    font-weight: 600;
+}
+
+.limited {
+    color: #ca8a04;
+    font-weight: 600;
+}
+
+.blocked {
+    color: #dc2626;
+    font-weight: 600;
+}
+
+/* ===== BUTTON VARIANTS ===== */
+.card button {
+    margin-right: 5px;
+    margin-top: 6px;
+}
+
+.card button:nth-child(1) {
+    background: #16a34a;
+    color: white;
+}
+
+.card button:nth-child(2) {
+    background: #eab308;
+    color: black;
+}
+
+.card button:nth-child(3) {
+    background: #dc2626;
+    color: white;
+}
+
+.card button:nth-child(4) {
+    background: #374151;
+    color: white;
+}
+
+/* ===== USER TITLE ===== */
+.user-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+/* INFO BLOCK */
+.info-box {
+    background: #eef2ff;
+    border: 1px solid #c7d2fe;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 30px;
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* делаем страницу на всю высоту */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* общий layout */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* основной контент растягивается */
+.container {
+    flex: 1;
+}
+
+/* футер всегда снизу */
+.footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    color: #6b7280;
+}

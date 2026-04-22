@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Единый портал управления данными</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🔷 HEADER -->
+<header class="header">
+    <div class="header-inner">
+        <h1>Единый портал управления персональными данными</h1>
+        <p class="subtitle">
+            Просмотр и управление доступом к вашим цифровым документам и данным
+        </p>
+    </div>
+</header>
+
+<!-- 🔷 MAIN -->
+<main class="container">
+
+    <!-- 🔍 SEARCH BLOCK -->
+    <div class="search-box">
+        <input id="iin" placeholder="Введите ИИН для доступа к данным">
+        <button onclick="loadUser()">Проверить</button>
+    </div>
+
+    <!-- ℹ️ INFO -->
+    <div class="info-box">
+        <p>
+            Данный сервис позволяет узнать, какие организации имеют доступ к вашим данным,
+            а также управлять этими разрешениями.
+        </p>
+    </div>
+
+    <!-- 👤 USER -->
+    <h2 id="user" class="user-title"></h2>
+
+    <!-- 📄 CONTENT -->
+    <div id="docs"></div>
+
+</main>
+
+<!-- 🔻 FOOTER -->
+<footer class="footer">
+    <p>© 2026 Государственная система управления данными</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
